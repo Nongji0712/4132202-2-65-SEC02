@@ -1,0 +1,10 @@
+version: '3'
+services:
+  php-NongJi:
+    container_name: php-NongJi
+    image: php:7.4-zts-alpine
+    volumes:
+    - ./php:/var/www/html/
+    ports:
+    - 8000:80
+    
